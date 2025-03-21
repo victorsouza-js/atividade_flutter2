@@ -16,7 +16,7 @@ class Tinder extends StatelessWidget {
         body: Column(
           children: [
             Container(
-              padding: EdgeInsets.only(top: 140),
+              padding: EdgeInsets.only(top: 200),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -51,16 +51,75 @@ class Tinder extends StatelessWidget {
               ),
             ),
             SizedBox(height: 60),
-            Center(
-              child: Container(
-                width: 400,
-                height: 50,
-                decoration: BoxDecoration(
-                  
-                  borderRadius: BorderRadius.circular(25),
-                  border: Border.all(color: Colors.white),
-                  
-                ),
+            Container(
+              child: Row(
+                children: [
+                  Padding(padding: EdgeInsets.only(left: 30)),
+                  Container(
+                    child: Image.network(
+                      'https://static-00.iconduck.com/assets.00/apple-icon-1662x2048-d80o29ez.png',
+                      width: 20,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: 100),
+                    child: Text('SIGN IN APPLE',style: TextStyle(color: Colors.white,fontSize: 15), textAlign: TextAlign.center),
+                  ),
+                ],
+              ),
+              width: 400,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                border: Border.all(color: Colors.white),
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              child: Row(
+                children: [
+                  Padding(padding: EdgeInsets.only(left: 30)),
+                  Container(
+                    child: Image.network(
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png',
+                      width: 20,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: 70),
+                    child: Text('SIGN IN WITH FACEBOOK',style: TextStyle(color: Colors.white,fontSize: 15), textAlign: TextAlign.center),
+                  ),
+                ],
+              ),
+              width: 400,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                border: Border.all(color: Colors.white),
+              ),
+            ),
+            SizedBox(height: 10),
+            Container(
+              child: Row(
+                children: [
+                  Padding(padding: EdgeInsets.only(left: 30)),
+                  Container(
+                    child: Image.network(
+                      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png',
+                      width: 20,
+                    ),
+                  ),
+                  Container(
+                    padding: EdgeInsets.only(left: 70),
+                    child: Text('SIGN IN WITH FACEBOOK',style: TextStyle(color: Colors.white,fontSize: 15), textAlign: TextAlign.center),
+                  ),
+                ],
+              ),
+              width: 400,
+              height: 50,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(25),
+                border: Border.all(color: Colors.white),
               ),
             ),
           ],
