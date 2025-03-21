@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(Tinder());
@@ -16,7 +17,7 @@ class Tinder extends StatelessWidget {
         body: Column(
           children: [
             Container(
-              padding: EdgeInsets.only(top: 200),
+              padding: EdgeInsets.only(top: 300),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -55,15 +56,18 @@ class Tinder extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(padding: EdgeInsets.only(left: 30)),
-                  Container(
-                    child: Image.network(
-                      'https://static-00.iconduck.com/assets.00/apple-icon-1662x2048-d80o29ez.png',
-                      width: 20,
-                    ),
+                  FaIcon(
+                    FontAwesomeIcons.apple,
+                    color: Colors.white,
+                    size: 28.0,
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 100),
-                    child: Text('SIGN IN APPLE',style: TextStyle(color: Colors.white,fontSize: 15), textAlign: TextAlign.center),
+                    child: Text(
+                      'SIGN IN APPLE',
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
@@ -79,15 +83,18 @@ class Tinder extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(padding: EdgeInsets.only(left: 30)),
-                  Container(
-                    child: Image.network(
-                      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png',
-                      width: 20,
-                    ),
+                  FaIcon(
+                    FontAwesomeIcons.facebook,
+                    color: Colors.white,
+                    size: 24.0,
                   ),
                   Container(
                     padding: EdgeInsets.only(left: 70),
-                    child: Text('SIGN IN WITH FACEBOOK',style: TextStyle(color: Colors.white,fontSize: 15), textAlign: TextAlign.center),
+                    child: Text(
+                      'SIGN IN WITH FACEBOOK',
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
@@ -103,15 +110,18 @@ class Tinder extends StatelessWidget {
               child: Row(
                 children: [
                   Padding(padding: EdgeInsets.only(left: 30)),
-                  Container(
-                    child: Image.network(
-                      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/667px-2023_Facebook_icon.svg.png',
-                      width: 20,
-                    ),
+                  Icon(
+                    Icons.message,
+                    color: const Color.fromARGB(255, 255, 255, 255),
+                    size: 24.0,
                   ),
                   Container(
-                    padding: EdgeInsets.only(left: 70),
-                    child: Text('SIGN IN WITH FACEBOOK',style: TextStyle(color: Colors.white,fontSize: 15), textAlign: TextAlign.center),
+                    padding: EdgeInsets.only(left: 40),
+                    child: Text(
+                      'SIGN IN WITH PHONE NUMBER',
+                      style: TextStyle(color: Colors.white, fontSize: 15),
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ],
               ),
@@ -121,6 +131,10 @@ class Tinder extends StatelessWidget {
                 borderRadius: BorderRadius.circular(25),
                 border: Border.all(color: Colors.white),
               ),
+            ),
+            SizedBox(height: 20,),
+            Container(
+              child: Text('Trouble Signing In?',style: TextStyle(color: Colors.white),),
             ),
           ],
         ),
