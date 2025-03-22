@@ -92,14 +92,8 @@ class Tinder extends StatelessWidget {
                     color: Colors.white,
                     size: 24.0,
                   ),
-                  Container(
-                    padding: EdgeInsets.only(left: 70),
-                    child: Text(
-                      'SIGN IN WITH FACEBOOK',
-                      style: TextStyle(color: Colors.white, fontSize: 15),
-                      textAlign: TextAlign.center,
-                    ),
-                  ),
+                  Padding(padding: EdgeInsets.only(left:60)),
+                  Text('SIGN IN WITH FACEBOOK', style: TextStyle(color: Colors.white, fontSize: 15), textAlign: TextAlign.center,),
                 ],
               ),
             ),
