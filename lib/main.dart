@@ -124,13 +124,14 @@ class Tinder extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(height: 20),
-            Container(
-              child: Text(
-                'Trouble Signing In?',
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
+
+            SizedBox(height: 25),
+            
+            Text(
+              'Trouble Signing In?',
+              style: TextStyle(color: Colors.white),
+            ), 
+            
           ],
         ),
       ),
